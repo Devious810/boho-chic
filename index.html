@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Appartamento Boho Chic | Firenze</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Appartamento boho‑chic a Firenze: 2 camere, balcone, Wi‑Fi ultraveloce. Prenota subito su Airbnb o Booking.com">
+
+  <!-- === Performance: preload hero image & fonts === -->
+  <link rel="preload" as="image" href="https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=" imagesrcset="https://q-xx.bstatic.com/xdata/images/hotel/max500/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o= 500w, https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o= 1000w" imagesizes="60vw">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- === Open Graph / Twitter preview === -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Appartamento Boho Chic | Firenze">
+  <meta property="og:description" content="Elegante appartamento boho‑chic con 2 camere vicino al centro di Firenze. Prenota ora!">
+  <meta property="og:image" content="https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=">
+  <meta property="og:url" content="https://tuodominio.it">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    /* === Palette boho === */
+    :root{
+      --latte:#F4EFE9;      /* sfondo principale */
+      --sabbia:#E8D9C7;     /* secondo sfondo */
+      --caramello:#C9AD90;  /* accent / CTA */
+      --moka:#594F43;       /* testo principale */
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
+    body{color:var(--moka);background:var(--latte);line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+    /* === Layout === */
+    header{background:url('https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=') center/cover no-repeat;height:60vh;display:flex;align-items:center;justify-content:center;color:var(--latte);text-shadow:0 2px 8px rgba(0,0,0,.45);}  
+    @media(max-width:600px){header{height:50vh;}}
+    header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);text-align:center;}
+
+    section{padding:4rem 6vw;}
+    .section-title{font-size:2rem;margin-bottom:1rem;font-family:'Playfair Display',serif;color:var(--moka);}  
+    p{max-width:70ch;margin-bottom:1.5rem;}
+
+    /* === Features grid === */
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem;}
+    .features li{list-style:none;background:var(--sabbia);padding:1.25rem;border-radius:16px 16px 48px 48px / 16px 16px 32px 32px;box-shadow:0 2px 6px rgba(0,0,0,.07);text-align:center;font-weight:600;}
+
+    /* === Gallery === */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;}
+    .gallery picture{display:block;}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:24px 24px 64px 64px/24px 24px 48px 48px;transition:transform .3s ease;}
+    .gallery img:hover{transform:scale(1.03);}
+
+    /* === CTA buttons === */
+    .cta{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;}
+    .cta a{flex:1 1 180px;background:var(--caramello);color:var(--latte);text-align:center;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;transition:background .3s;}
+    .cta a:hover{background:#b18c74;}
+
+    /* === Location map === */
+    iframe{border:0;border-radius:12px;filter:grayscale(.1) contrast(1.1);}  
+
+    /* === Footer === */
+    footer{background:var(--moka);color:var(--latte);text-align:center;padding:2rem 6vw;font-size:.875rem;}
+  </style>
+  <link rel="icon" href="/favicon.png">
+
+  <!-- === Schema.org structured data === -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Appartamento Boho Chic",
+    "description": "Elegante appartamento boho‑chic di 55 m² con 2 camere, balcone e Wi‑Fi ultraveloce nel quartiere Santa Maria Novella a Firenze.",
+    "image": [
+      "https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=",
+      "https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479293.jpg?k=4e34d7cdef6473f9776863c93fd3348c2fde97259e5fd59643cede92fffed48a&o="
+    ],
+    "url": "https://tuodominio.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viale Francesco Redi 35",
+      "addressLocality": "Firenze",
+      "postalCode": "50144",
+      "addressCountry": "IT"
+    },
+    "amenityFeature": [
+      {"@type":"LocationFeatureSpecification","name":"Wi‑Fi","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Aria condizionata","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Balcone","value":true}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Appartamento Boho Chic</h1>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">L'appartamento</h2>
+    <p>Elegante appartamento boho‑chic di 55&nbsp;m² con <strong>2 camere da letto</strong>, soggiorno luminoso con balcone, cucina attrezzata e bagno con ampia doccia a filo pavimento. Perfetto per <strong>fino a 4 ospiti</strong>, climatizzato e dotato di <strong>Wi‑Fi ultraveloce</strong>, smart‑TV e dettagli di design.</p>
+  </section>
+
+  <section id="features">
+    <h2 class="section-title">Dotazioni principali</h2>
+    <ul class="features">
+      <li>Aria condizionata in tutti gli ambienti</li>
+      <li>Cucina completa: forno, microonde, lavastov
