@@ -2,60 +2,26 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Appartamento Boho Chic | Firenze</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Appartamento boho‑chic a Firenze: 2 camere, balcone, Wi‑Fi ultraveloce. Prenota subito su Airbnb o Booking.com">
-
-  <!-- preload hero image & fonts -->
-  <link rel="preload" as="image" href="https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Appartamento Boho Chic | Firenze">
-  <meta property="og:description" content="Elegante appartamento boho‑chic con 2 camere vicino al centro di Firenze. Prenota ora!">
-  <meta property="og:image" content="https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=">
-  <meta property="og:url" content="https://devious810.github.io/boho-chic_florence/">
-  <meta name="twitter:card" content="summary_large_image">
-
+  <title>Boho‑Chic BnB • Firenze</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    :root{--latte:#F4EFE9;--sabbia:#E8D9C7;--caramello:#C9AD90;--moka:#594F43;}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
-    body{background:var(--latte);color:var(--moka);line-height:1.6;-webkit-font-smoothing:antialiased;}
-    header{background:url('https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=') center/cover no-repeat;height:60vh;display:flex;align-items:center;justify-content:center;color:var(--latte);text-shadow:0 2px 8px rgba(0,0,0,.45);}header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);text-align:center;}section{padding:4rem 6vw;} .section-title{font-size:2rem;margin-bottom:1rem;font-family:'Playfair Display',serif;} .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;} .gallery img{width:100%;height:220px;object-fit:cover;border-radius:24px 24px 64px 64px/24px 24px 48px 48px;transition:.3s;} .gallery img:hover{transform:scale(1.03);} .cta{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;} .cta a{flex:1 1 180px;background:var(--caramello);color:var(--latte);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;transition:.3s;} .cta a:hover{background:#b18c74;} .share-buttons{display:flex;justify-content:center;gap:1rem;margin-top:1rem;} .share-buttons a{width:52px;height:52px;background:var(--caramello);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:.3s;} .share-buttons a:hover{background:#b18c74;} .share-buttons svg{fill:var(--latte);width:26px;height:26px;} footer{background:var(--moka);color:var(--latte);text-align:center;padding:2rem 6vw;font-size:.875rem;}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;text-align:center;background:#faf8f5;color:#463d34;}
+    header{background:#c9ad90;color:#fff;padding:60px 15px;min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;}
+    h1{margin:0;font-size:34px;}
+    .btn{display:inline-block;padding:14px 32px;background:#fff;color:#463d34;border-radius:30px;text-decoration:none;font-weight:bold;font-size:17px;}
+    .btn:hover{background:#ede5de;}
+    footer{background:#463d34;color:#faf8f5;padding:30px 15px;font-size:14px;}
   </style>
 </head>
 <body>
-  <header><h1>Appartamento Boho Chic</h1></header>
+  <!-- HERO con pulsante che apre la galleria (cartella "galleria") -->
+  <header>
+    <h1>Appartamento Boho‑Chic</h1>
+    <a class="btn" href="galleria/">📷 Apri Galleria</a>
+  </header>
 
-  <section id="about">
-    <h2 class="section-title">L'appartamento</h2>
-    <p>Elegante appartamento boho‑chic di 55 m² con <strong>2 camere</strong>, soggiorno con balcone, cucina attrezzata e Wi‑Fi ultraveloce. Ospita fino a 4 persone.</p>
-  </section>
-
-  <section id="gallery">
-    <h2 class="section-title">Galleria</h2>
-    <div class="gallery">
-      <img loading="lazy" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=" alt="Soggiorno">
-      <img loading="lazy" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/527479293.jpg?k=4e34d7cdef6473f9776863c93fd3348c2fde97259e5fd59643cede92fffed48a&o=" alt="Camera">
-      <img loading="lazy" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/527479296.jpg?k=ef2b866e293c0d8aebf269da1b9547dbc222c2539a9e2e379c42c8cf527e9925&o=" alt="Cucina">
-      <img loading="lazy" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/527479300.jpg?k=e2087cfa1deea1aa42f687c0d3a68f94589937d604d7400d1606d85b9cb4b8b3&o=" alt="Dettaglio">
-    </div>
-  </section>
-
-  <section id="book">
-    <h2 class="section-title">Prenota la tua permanenza</h2>
-    <p>Verifica disponibilità e tariffe sui nostri partner.</p>
-    <div class="cta">
-      <a href="https://www.airbnb.it/rooms/1062899880245529907" target="_blank" rel="noopener">Airbnb</a>
-      <a href="https://www.booking.com/hotel/it/appartamento-boho-chic.it.html" target="_blank" rel="noopener">Booking</a>
-    </div>
-  </section>
-
-  <!-- sezione Condividi -->
-  <section id="share">
-    <h2 class="section-title">Condividi</h2>
-    <div class="share-buttons">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://devious810.github.io/boho-chic_florence/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15.1 8.4h-2V6.8c0-.5.4-.9.8-.9h1.1V3.1l-1.6-.1c-2.2 0-2.7 1.6-2.7 2.6v2.8H9.5v2.7h2.2V21h2.7v-9.9h2l.3-2.7z"/></svg></a>
-      <a href="https://api.whatsapp.com/send?text=https://devious810.github.io/boho-chic_florence/" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.1 2.1A9.9 9.9 0 002.1 12c0 1.7.4 3.3 1.2 4.8L2 22l5.3-1.3a9.9 9.9 0 004.8 1.2 9.9 9.9 0 009.9-9.9c0-2.6-1-5.1-2.9-7A9.9 9.9 0 0012.1 2.1zm4.5 11.6c-.2-.1-1.4-.6-1.6-.7-.2-.1-.3-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.7-1-.6-.5-1.1-1.2-1.3-1.4-.1-.2 0-.4.1-.5l.5-.6c.1-.1.1-.2 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4 0-.6.2-.2.2-.8.8-.8 2s.8 2.3.9 2.4c.1.2 1.6 2.5 3.8 3.5.5.2.9.3 1.2.4.5.1 1 .1 1.4.1.4 0 1.4-.5 1.6-
+  <footer>
+    © 2025 Appartamento Boho‑Chic • Firenze
+  </footer>
+</body>
+</html>
