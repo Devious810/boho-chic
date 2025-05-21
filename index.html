@@ -2,23 +2,52 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Boho‑Chic BnB • Firenze</title>
+  <title>Appartamento Boho‑Chic • Firenze</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;text-align:center;background:#faf8f5;color:#463d34;}
-    header{background:#c9ad90;color:#fff;padding:60px 15px;min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;}
-    h1{margin:0;font-size:34px;}
-    .btn{display:inline-block;padding:14px 32px;background:#fff;color:#463d34;border-radius:30px;text-decoration:none;font-weight:bold;font-size:17px;}
+    :root{--latte:#faf8f5;--caramello:#c9ad90;--moka:#463d34;}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;scroll-behavior:smooth;}
+    body{background:var(--latte);color:var(--moka);text-align:center;line-height:1.6;}
+
+    /* HERO */
+    header{background:var(--caramello);color:#fff;min-height:60vh;padding:60px 15px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;}
+    h1{font-size:34px;}
+    .btn{display:inline-block;padding:14px 32px;background:#fff;color:var(--moka);border-radius:30px;text-decoration:none;font-weight:bold;font-size:17px;transition:.3s;}
     .btn:hover{background:#ede5de;}
-    footer{background:#463d34;color:#faf8f5;padding:30px 15px;font-size:14px;}
+
+    section{padding:4rem 6vw;max-width:900px;margin:auto;text-align:left;}
+    .section-title{text-align:center;font-size:28px;margin-bottom:1.2rem;}
+
+    /* Booking CTA */
+    .cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;}
+    .cta a{flex:1 1 180px;background:var(--caramello);color:#fff;padding:1rem 2rem;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s;text-align:center;}
+    .cta a:hover{opacity:.8;}
+
+    footer{background:var(--moka);color:var(--latte);padding:30px 15px;font-size:14px;}
   </style>
 </head>
 <body>
-  <!-- HERO con pulsante che apre la galleria (cartella "galleria") -->
+  <!-- HERO con pulsante galleria -->
   <header>
     <h1>Appartamento Boho‑Chic</h1>
     <a class="btn" href="galleria/">📷 Apri Galleria</a>
   </header>
+
+  <!-- Sezione descrizione appartamento -->
+  <section id="about">
+    <h2 class="section-title">L'appartamento</h2>
+    <p>Elegante appartamento boho‑chic di 55&nbsp;m² con <strong>2 camere da letto</strong>, soggiorno luminoso con balcone, cucina full‑optional e bagno moderno. Ospita comodamente fino a 4 persone ed è dotato di Wi‑Fi ultraveloce e aria condizionata in tutti gli ambienti.</p>
+  </section>
+
+  <!-- Sezione booking -->
+  <section id="prenota">
+    <h2 class="section-title">Prenota ora</h2>
+    <p>Controlla subito disponibilità e prezzi sui nostri portali partner:</p>
+    <div class="cta">
+      <a href="https://www.airbnb.it/rooms/1062899880245529907" target="_blank" rel="noopener">Airbnb</a>
+      <a href="https://www.booking.com/hotel/it/appartamento-boho-chic.it.html" target="_blank" rel="noopener">Booking.com</a>
+    </div>
+  </section>
 
   <footer>
     © 2025 Appartamento Boho‑Chic • Firenze
