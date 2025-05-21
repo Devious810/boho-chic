@@ -4,42 +4,51 @@
   <meta charset="UTF-8">
   <title>Appartamento Boho‑Chic • Firenze</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    :root{--latte:#faf8f5;--caramello:#c9ad90;--moka:#463d34;}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;scroll-behavior:smooth;}
-    body{background:var(--latte);color:var(--moka);text-align:center;line-height:1.6;}
+    :root{
+      --latte:#F4EFE9;
+      --sabbia:#E8D9C7;
+      --caramello:#C9AD90;
+      --moka:#594F43;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;scroll-behavior:smooth;}
+    body{background:var(--latte);color:var(--moka);line-height:1.6;-webkit-font-smoothing:antialiased;}
 
-    /* HERO */
-    header{background:var(--caramello);color:#fff;min-height:60vh;padding:60px 15px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;}
-    h1{font-size:34px;}
-    .btn{display:inline-block;padding:14px 32px;background:#fff;color:var(--moka);border-radius:30px;text-decoration:none;font-weight:bold;font-size:17px;transition:.3s;}
-    .btn:hover{background:#ede5de;}
+    /* HERO con immagine */
+    header{min-height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:2rem;color:#fff;background:url('https://q-xx.bstatic.com/xdata/images/hotel/max1000/527479281.jpg?k=1d304ec4844b7dca3d729d91d6cc638293dd3a7996505305a80ab68512d3422e&o=') center/cover no-repeat;position:relative;}
+    header::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35);} /* overlay */
+    header>*{position:relative;z-index:1;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);}
+    .btn{display:inline-block;padding:14px 38px;background:var(--caramello);color:var(--latte);border-radius:40px;font-weight:600;font-size:1.05rem;text-decoration:none;transition:background .3s;}
+    .btn:hover{background:#b18c74;}
 
-    section{padding:4rem 6vw;max-width:900px;margin:auto;text-align:left;}
-    .section-title{text-align:center;font-size:28px;margin-bottom:1.2rem;}
+    /* Sezioni */
+    section{padding:4rem 6vw;max-width:900px;margin-inline:auto;}
+    .section-title{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1.2rem;text-align:center;color:var(--moka);}  
+    p{max-width:70ch;margin-bottom:1.5rem;}
 
-    /* Booking CTA */
+    /* CTA Booking */
     .cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;}
-    .cta a{flex:1 1 180px;background:var(--caramello);color:#fff;padding:1rem 2rem;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s;text-align:center;}
-    .cta a:hover{opacity:.8;}
+    .cta a{flex:1 1 200px;background:var(--caramello);color:var(--latte);padding:1rem 2rem;border-radius:30px;text-decoration:none;font-weight:600;transition:opacity .3s;text-align:center;}
+    .cta a:hover{opacity:.85;}
 
-    footer{background:var(--moka);color:var(--latte);padding:30px 15px;font-size:14px;}
+    footer{background:var(--moka);color:var(--latte);text-align:center;padding:2rem 6vw;font-size:.9rem;}
   </style>
 </head>
 <body>
-  <!-- HERO con pulsante galleria -->
+  <!-- HERO -->
   <header>
     <h1>Appartamento Boho‑Chic</h1>
-    <a class="btn" href="galleria/">📷 Apri Galleria</a>
+    <a class="btn" href="galleria/">Apri Galleria</a>
   </header>
 
-  <!-- Sezione descrizione appartamento -->
   <section id="about">
     <h2 class="section-title">L'appartamento</h2>
     <p>Elegante appartamento boho‑chic di 55&nbsp;m² con <strong>2 camere da letto</strong>, soggiorno luminoso con balcone, cucina full‑optional e bagno moderno. Ospita comodamente fino a 4 persone ed è dotato di Wi‑Fi ultraveloce e aria condizionata in tutti gli ambienti.</p>
   </section>
 
-  <!-- Sezione booking -->
   <section id="prenota">
     <h2 class="section-title">Prenota ora</h2>
     <p>Controlla subito disponibilità e prezzi sui nostri portali partner:</p>
