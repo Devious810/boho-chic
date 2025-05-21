@@ -59,8 +59,9 @@
 
     /* === Share buttons === */
     .share-buttons{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem;}
-    .share-buttons a{width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--caramello);color:var(--latte);border-radius:50%;font-weight:600;text-decoration:none;transition:background .3s;font-size:.9rem;}
+    .share-buttons a{width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--caramello);border-radius:50%;text-decoration:none;transition:background .3s;}
     .share-buttons a:hover{background:#b18c74;}
+    .share-buttons svg{width:26px;height:26px;fill:var(--latte);}
 
     /* === Location map === */
     iframe{border:0;border-radius:12px;filter:grayscale(.1) contrast(1.1);}  
@@ -92,17 +93,4 @@
     "amenityFeature": [
       {"@type":"LocationFeatureSpecification","name":"Wi‑Fi","value":true},
       {"@type":"LocationFeatureSpecification","name":"Aria condizionata","value":true},
-      {"@type":"LocationFeatureSpecification","name":"Balcone","value":true}
-    ]
-  }
-  </script>
-</head>
-<body>
-  <header>
-    <h1>Appartamento Boho Chic</h1>
-  </header>
-
-  <section id="about">
-    <h2 class="section-title">L'appartamento</h2>
-    <p>Elegante appartamento boho‑chic di 55&nbsp;m² con <strong>2 camere da letto</strong>, soggiorno luminoso con balcone, cucina attrezzata e bagno con ampia doccia a filo pavimento. Perfetto per <strong>fino a 4 ospiti
-add share buttons
+      {"@type":"LocationFeatureSpecification","name":"Balcone","
